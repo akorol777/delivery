@@ -1,0 +1,159 @@
+body
+	background: url(../img/bg.jpg) 
+button
+	&:active
+		+transform(scale(0.95))	
+/*----------btn----------*/
+$btn-h:40px
+$btn-w:169px
+.btn
+	background: 1px solid #00a0a8
+	color: #fff
+	font-family: "Myriad Pro"
+	font-size: 22px
+	font-weight: bold
+	width: $btn-w
+	height: $btn-h 
+	line-height: $btn-h
+	+transition(0.2s)
+	+text-shadow(0 1px 1px rgba(0,0,0,.4))
+	+border-radius(3px)
+	+box-shadow(0 4px 9px #000, inset 0 0 0 1px rgba(255,255,255,.38))
+	+box	
+.btn-open
+	position: absolute
+	top: 50%
+	left: 50%
+	margin-top: -($btn-h/2) 
+	margin-left: -($btn-w/2)
+	background: #008d96
+	+g(#008d96, #00646f)	
+	&:hover
+		background: #00646f 
+		+g(#00646f,#008d96)		
+.btn-sign
+	margin-top: 14px	
+	background: #629600
+	@include background-image(linear-gradient(bottom, rgba(117,117,117,.9) 0%, rgba(222,222,222,.9) 100%))
+	+g(#629600, #2f6e00)
+	&:hover
+		background: #2f6e00 
+		+g(#2f6e00, #629600)
+	img
+		display: none
+.btn-load
+	cursor: default
+	+hide-text
+	img
+		display: inline-block			
+.btn-close
+	position: absolute
+	top: 11px
+	right: 11px 
+	display: inline-block
+	height: 21px
+	width: 21px
+	line-height: 21px
+	background: #8e8e8e
+	+box
+	+box-shadow(0 1px 8px rgba(0,0,0,.75), inset 0 1px 9px rgba(0,0,0,.18), inset 0 0 250px rgba(54,54,54,.22))
+	+border-radius(50%)
+	&:hover
+		+opacity(0.7)	
+/*----------sign----------*/
+$sign-h: 552px
+$sign-w: 330px
+$sing__focus: rgba(240,50,130,0.5)
+.sign
+	width: $sign-w
+	height: $sign-h
+	position: absolute
+	top: 50%
+	left: 50%
+	margin-top: -($sign-h/2)
+	margin-left: -($sign-w/2)	
+	z-index: 10
+	background: #1c1c1c
+	overflow: hidden
+	border: 1px solid #000
+	font-family: "Myriad Pro" 
+	color: #FFF 
+	+box
+	+border-radius (3px)
+	+box-shadow(0 -2px 10px rgba(0,0,0,0.4))
+.sign-hide	
+	display: none
+.sign__main
+	position: relative
+	padding: 15px 29px 23px 29px 
+	border-bottom: 1px solid #000 
+	background: url(../img/bg-main.png)
+	+box-shadow(inset 0 0px 0px 1px rgba(255,255,255,0.1))	
+	form
+.sign__topper
+	margin-bottom: 15px
+.sign__title
+	text-align: center
+	font-size: 30px
+	line-height: 32px
+	+text-shadow(0 1px 1px rgba(0,0,0,.4))
+.sign__roll
+	input
+		color: #fff
+		background-color: rgba(58,58,58,.09)
+		width: 100% 
+		height: 36px
+		font-size: 15px
+		line-height: 15px
+		padding: 0 10px 
+		margin-bottom: 17px
+		+box
+		+border-radius(3px)
+		+box-shadow(0 1px 0 rgba(255,255,255,.1), inset 0 1px 2px rgba(0,0,0,.6))
+		&:focus,&:invalid,&:valid
+			outline: none
+		&:focus 
+			border-color: $sing__focus
+			+box-shadow (0px 0px 3px $sing__focus)
+	input::-webkit-input-placeholder,
+		color: #fff	
+		font-style: italic
+		padding-left: 2px
+		+opacity(0.5)		
+	input::-moz-placeholder	
+		color: #fff	
+		font-style: italic
+		padding-left: 2px	
+		+opacity(0.5)		
+.sign__label
+	display: block
+	font-size: 13px
+	line-height: 13px
+	margin-bottom: 8px
+	+text-shadow(0 1px 1px rgba(0,0,0,.4))
+	+opacity(0.7)
+	span	
+		color: #F00 
+.sign__btn
+	text-align: center	
+.sign__footer
+	padding-top: 13px
+	height: 100%
+	background: url(../img/bg-footer.png)
+	+box-shadow(inset 0 0px 0px 1px rgba(255,255,255,0.1))	
+.sign__member
+	margin-left: -20px
+	text-align: center
+	color: #5b5b5b
+	font-size: 13px
+	line-height: 13px
+	+text-shadow(0 1px 1px rgba(0,0,0,.4))
+	a
+		color: #fff
+		&:hover
+			text-decoration: none
+/*-----ico-----*/
+.ico
+	display: inline-block
+.i-close
+	+s(i-close)			

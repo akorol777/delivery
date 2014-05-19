@@ -1,0 +1,61 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Delivery</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/lib/cycle.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script src="js/common.js"></script>
+</head>
+<body>
+	<!--BEGIN btn-open-->
+		<button class="btn btn-open js-run">Open modal</button>
+	<!--/.btn-open-->	
+	<!--BEGIN sign-->
+		<div class="sign js-effect sign-hide">
+			<div class="sign__main">
+				<form action="">
+					<div class="sign__topper">
+						<button class="btn-close js-run">
+							<i class="ico i-close"></i>
+						</button>
+						<div class="sign__title">Sign up</div>
+					</div>
+					<div class="sign__roll">
+						<label for="name" class="sign__label">Name <span>*</span></label>
+						<input type="text" id="name" required placeholder="John Done">
+					</div>
+					<div class="sign__roll">
+						<label for="nickname" class="sign__label">Nickname <span>*</span></label>
+						<input type="text" id="nickname" required placeholder="johndoe">
+					</div>
+					<div class="sign__roll">
+						<label for="email" class="sign__label">Email adress</label>
+						<input type="email" id="email" required placeholder="johndoe@email.com">
+					</div>
+					<div class="sign__roll">
+						<label for="pass" class="sign__label">Password <span>*</span></label>
+						<input type="password" id="pass" required placeholder="••••••••••••••••">
+					</div>
+					<div class="sign__roll">
+						<label for="retype" class="sign__label">Retype <span>*</span></label>
+						<input type="password" id="retype" required placeholder="••••••••••••••••">
+					</div>
+					<div class="sign__btn">
+						<button class="btn btn-sign js-run_load js-effect_load">Sign me up!
+							<img src="img/loader.gif" alt="#">
+						</button>
+					</div>	
+				</form>				
+			</div>
+			<div class="sign__footer">
+				<div class="sign__member">Already a member? <a href="#">Sign in here</a></div>											
+			</div>
+		</div>
+	<!--/.sign-->	
+</body>
+</html>
