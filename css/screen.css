@@ -39,7 +39,7 @@ button:active { -webkit-transform: scale(0.95); -moz-transform: scale(0.95); -ms
 .btn-close:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
 
 /*----------sign---------- */
-.sign { width: 330px; height: 552px; position: absolute; top: 50%; left: 50%; margin-top: -276px; margin-left: -165px; z-index: 10; background: #1c1c1c; overflow: hidden; border: 1px solid black; font-family: "Myriad Pro"; color: white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4); box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4); }
+.sign, .error { width: 330px; height: 552px; position: absolute; top: 50%; left: 50%; margin-top: -276px; margin-left: -165px; z-index: 10; background: #1c1c1c; overflow: hidden; border: 1px solid black; font-family: "Myriad Pro"; color: white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4); box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4); }
 
 .sign-hide { display: none; }
 
@@ -69,6 +69,9 @@ button:active { -webkit-transform: scale(0.95); -moz-transform: scale(0.95); -ms
 /*-----ico----- */
 .ico { display: inline-block; }
 
-.i-close { background: url('../img/icons-s76b5c36647.png') 0 0 no-repeat; width: 7px; height: 7px; }
+.i-close { background: url('../img/icons-s76b5c36647.png') 0 0 no-repeat; width: 7px; height: 7px; vertical-align: 1px; }
+
+/*-----error----- */
+.error { width: 400px; height: 200px; margin-top: -100px; margin-left: -200px; }
 
 .lteie8 .sign__roll input { padding-top: 6px; line-height: 20px; background: #0e0e0e; }

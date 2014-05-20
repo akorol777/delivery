@@ -63,8 +63,8 @@ $btn-w:169px
 /*----------sign----------*/
 $sign-h: 552px
 $sign-w: 330px
-$sing__focus: rgba(240,50,130,0.5)
-.sign
+$sing-focus: rgba(240,50,130,0.5)
+.sign, .error
 	width: $sign-w
 	height: $sign-h
 	position: absolute
@@ -113,8 +113,8 @@ $sing__focus: rgba(240,50,130,0.5)
 		&:focus,&:invalid,&:valid
 			outline: none
 		&:focus 
-			border-color: $sing__focus
-			+box-shadow (0px 0px 3px $sing__focus)
+			border-color: $sing-focus
+			+box-shadow (0px 0px 3px $sing-focus)
 	input::-webkit-input-placeholder,
 		color: #fff	
 		font-style: italic
@@ -156,4 +156,13 @@ $sing__focus: rgba(240,50,130,0.5)
 .ico
 	display: inline-block
 .i-close
-	+s(i-close)			
+	+s(i-close)
+	vertical-align: 1px	
+/*-----error-----*/
+$error-h: 200px
+$error-w: 400px
+.error	
+	width: $error-w
+	height: $error-h   	
+	margin-top: -($error-h/2)
+	margin-left: -($error-w/2)	
